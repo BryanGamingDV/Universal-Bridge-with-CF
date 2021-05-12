@@ -1,0 +1,3 @@
+name: Bungeecord
+version: ${project.version}
+main: me.bryangaming.bungee.Bungee

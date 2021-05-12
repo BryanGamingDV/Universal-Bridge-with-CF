@@ -1,0 +1,4 @@
+name: Me.bryangaming.
+version: ${project.version}
+main: me.bryangaming.Spigot
+api-version: 1.16
