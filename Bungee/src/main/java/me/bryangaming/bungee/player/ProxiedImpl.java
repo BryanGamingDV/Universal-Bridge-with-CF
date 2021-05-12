@@ -5,7 +5,6 @@ import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
 import java.util.List;
-import java.util.Properties;
 
 public class ProxiedImpl implements CommandSender {
 
