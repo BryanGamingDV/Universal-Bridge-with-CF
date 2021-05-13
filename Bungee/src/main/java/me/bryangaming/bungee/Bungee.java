@@ -10,7 +10,7 @@ import me.fixeddev.commandflow.bungee.BungeeCommandManager;
 import me.fixeddev.commandflow.bungee.factory.BungeeModule;
 import net.md_5.bungee.api.plugin.Plugin;
 
-public final class Bungee extends Plugin {
+public class Bungee extends Plugin {
     
     @Override
     public void onEnable() {

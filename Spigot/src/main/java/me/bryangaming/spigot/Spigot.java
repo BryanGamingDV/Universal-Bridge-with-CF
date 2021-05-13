@@ -11,7 +11,7 @@ import me.fixeddev.commandflow.bukkit.BukkitCommandManager;
 import me.fixeddev.commandflow.bukkit.factory.BukkitModule;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class Spigot extends JavaPlugin {
+public class Spigot extends JavaPlugin {
 
 
     @Override
