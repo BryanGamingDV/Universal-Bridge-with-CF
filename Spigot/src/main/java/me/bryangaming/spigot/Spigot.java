@@ -1,9 +1,11 @@
 package me.bryangaming.spigot;
 
-import me.bryangaming.spigot.command.TestCommand;
+import me.bryangaming.common.command.TestCommand;
+import me.bryangaming.spigot.module.SpigotModule;
 import me.fixeddev.commandflow.CommandManager;
 import me.fixeddev.commandflow.annotated.AnnotatedCommandTreeBuilder;
 import me.fixeddev.commandflow.annotated.AnnotatedCommandTreeBuilderImpl;
+import me.fixeddev.commandflow.annotated.part.AbstractModule;
 import me.fixeddev.commandflow.annotated.part.PartInjector;
 import me.fixeddev.commandflow.bukkit.BukkitCommandManager;
 import me.fixeddev.commandflow.bukkit.factory.BukkitModule;
@@ -14,6 +16,9 @@ public final class Spigot extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
+        loadModules(new SpigotModule());
+
         CommandManager commandManager = new BukkitCommandManager("spigot");
 
         PartInjector partInjector = PartInjector.create();
@@ -23,6 +28,13 @@ public final class Spigot extends JavaPlugin {
 
         commandManager.registerCommands(builder.fromClass(new TestCommand()));
 
+    }
+
+
+    public void loadModules(AbstractModule... abstractModules){
+        for (AbstractModule abstractModule : abstractModules){
+            abstractModule.configure();
+        }
     }
 
     @Override

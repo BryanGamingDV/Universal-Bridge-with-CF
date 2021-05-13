@@ -8,13 +8,14 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <modelVersion>4.0.0</modelVersion>
-
     <artifactId>spigot</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -53,6 +54,8 @@
             </resource>
         </resources>
     </build>
+
+
 
     <repositories>
         <repository>

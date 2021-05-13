@@ -1,8 +1,8 @@
-package me.bryangaming.common;
+package me.bryangaming.common.sender;
 
 import java.util.List;
 
-public interface CommandSender {
+public interface SenderWrapper {
 
     /**
      * Gets the name of this command sender
@@ -21,7 +21,7 @@ public interface CommandSender {
     /**
      * Sends this sender multiple messages
      *
-     * @param messages An array of messages to be displayed
+     * @param messages An list of messages to be displayed
      */
     void sendMessage(List<String> messages);
 
