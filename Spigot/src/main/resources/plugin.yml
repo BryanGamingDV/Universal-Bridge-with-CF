@@ -1,4 +1,4 @@
-name: Me.bryangaming.
+name: SpigotPlugin
 version: ${project.version}
 main: me.bryangaming.spigot.Spigot
 api-version: 1.16
