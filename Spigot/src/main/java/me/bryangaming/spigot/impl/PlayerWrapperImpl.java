@@ -5,7 +5,9 @@ import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
-public class PlayerWrapperImpl extends SenderWrapperImpl implements PlayerWrapper {
+public class PlayerWrapperImpl
+        extends SenderWrapperImpl
+        implements PlayerWrapper {
 
     private final Player player;
 

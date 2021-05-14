@@ -3,7 +3,6 @@ package me.bryangaming.common.command;
 
 import me.bryangaming.common.SenderAnnotWrapper;
 import me.bryangaming.common.sender.PlayerWrapper;
-import me.bryangaming.common.sender.SenderWrapper;
 import me.fixeddev.commandflow.annotated.CommandClass;
 import me.fixeddev.commandflow.annotated.annotation.Command;
 
