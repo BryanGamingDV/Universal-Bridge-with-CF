@@ -15,6 +15,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
+
+//
+// Credits to Yushuu
+//
+
 public class TransformingPartFactory<T, R>
         implements PartFactory {
 

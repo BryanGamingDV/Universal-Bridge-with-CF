@@ -10,6 +10,7 @@ import me.fixeddev.commandflow.annotated.part.AbstractModule;
 import me.fixeddev.commandflow.annotated.part.Key;
 import me.fixeddev.commandflow.bukkit.factory.CommandSenderFactory;
 import me.fixeddev.commandflow.bukkit.factory.PlayerPartFactory;
+import me.fixeddev.commandflow.bukkit.factory.PlayerSenderFactory;
 
 public class SpigotModule extends AbstractModule {
 
@@ -25,6 +26,6 @@ public class SpigotModule extends AbstractModule {
                 PlayerWrapperImpl::new,
                 PlayerWrapper.class));
 
-        bindFactory(new Key(PlayerWrapper.class, SenderAnnotWrapper.class), new PlayerPartFactory());
+        bindFactory(new Key(PlayerWrapper.class, SenderAnnotWrapper.class), new PlayerSenderFactory());
     }
 }
