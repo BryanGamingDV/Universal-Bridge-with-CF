@@ -12,7 +12,7 @@ import me.fixeddev.commandflow.bukkit.factory.CommandSenderFactory;
 import me.fixeddev.commandflow.bukkit.factory.PlayerPartFactory;
 import me.fixeddev.commandflow.bukkit.factory.PlayerSenderFactory;
 
-public class SpigotModule extends AbstractModule {
+public class  SpigotModule extends AbstractModule {
 
     @Override
     public void configure() {
@@ -26,6 +26,7 @@ public class SpigotModule extends AbstractModule {
                 PlayerWrapperImpl::new,
                 PlayerWrapper.class));
 
-        bindFactory(new Key(PlayerWrapper.class, SenderAnnotWrapper.class), new PlayerSenderFactory());
+        bindFactory(new Key(PlayerWrapper.class, SenderAnnotWrapper.class),
+                new PlayerSenderFactory());
     }
 }
