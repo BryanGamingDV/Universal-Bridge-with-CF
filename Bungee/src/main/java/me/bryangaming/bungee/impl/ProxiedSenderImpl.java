@@ -4,6 +4,7 @@ import me.bryangaming.common.sender.SenderWrapper;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.chat.TextComponent;
 
+import java.lang.reflect.Method;
 import java.util.List;
 
 public class ProxiedSenderImpl implements SenderWrapper {

@@ -5,7 +5,8 @@ import org.bukkit.command.CommandSender;
 
 import java.util.List;
 
-public class SenderWrapperImpl implements SenderWrapper {
+public class SenderWrapperImpl
+        implements SenderWrapper {
 
     private final CommandSender commandSender;
 
